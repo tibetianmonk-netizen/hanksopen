@@ -189,7 +189,7 @@ h1, h2, h3 {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  animation: posterCarousel 20s infinite steps(1);
+  animation: posterCarousel 14s infinite steps(1);
 }
 
 .poster-slide:first-child {
