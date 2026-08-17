@@ -166,7 +166,6 @@ h1, h2, h3 {
 .poster-carousel {
   position: relative;
   width: 100%;
-  padding-top: 125%;
   overflow: hidden;
   border: 1px solid #dddddd;
 }
@@ -182,7 +181,9 @@ h1, h2, h3 {
 }
 
 .poster-slide:first-child {
-  opacity: 1;
+  position: static;
+  display: block;
+  height: auto;
 }
 
 @keyframes posterCarousel {
