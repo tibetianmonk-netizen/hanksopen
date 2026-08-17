@@ -142,6 +142,10 @@ h1, h2, h3 {
   margin-top: 12px;
 }
 
+.eng-content p {
+  text-align: justify;
+}
+
 .eng-toggle-checkbox:checked ~ .eng-content {
   display: block;
 }
