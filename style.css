@@ -416,8 +416,8 @@ p {
 
 .gallery-thumbs {
   display: grid;
-  grid-template-columns: repeat(15, 1fr);
-  gap: 4px;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 6px;
   margin-top: 6px;
   width: 100%;
 }

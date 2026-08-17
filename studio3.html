@@ -320,5 +320,26 @@
   <p>© 2026 HANK'S OPEN STUDIO</p>
 </footer>
 
+<script>
+(function () {
+  var stage = document.querySelector('.gallery-main-stage');
+  if (!stage) return;
+  var total = 30;
+  var startX = 0;
+  stage.addEventListener('touchstart', function (e) {
+    startX = e.touches[0].clientX;
+  }, { passive: true });
+  stage.addEventListener('touchend', function (e) {
+    var dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) < 40) return;
+    var checked = document.querySelector('.gallery-radio:checked');
+    if (!checked) return;
+    var idx = parseInt(checked.id.replace('g3-', ''), 10);
+    var next = dx < 0 ? (idx + 1) % total : (idx - 1 + total) % total;
+    document.getElementById('g3-' + next).checked = true;
+  }, { passive: true });
+})();
+</script>
+
 </body>
 </html>
