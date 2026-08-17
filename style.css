@@ -107,6 +107,7 @@ h1, h2, h3 {
   position: relative;
   max-width: none;
   margin: 0 auto;
+  overflow-anchor: none;
 }
 
 .eng-toggle-checkbox {
@@ -140,6 +141,7 @@ h1, h2, h3 {
 .eng-content {
   display: none;
   margin-top: 12px;
+  overflow-anchor: none;
 }
 
 .eng-content p {
