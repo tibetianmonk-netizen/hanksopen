@@ -32,9 +32,9 @@ img {
 }
 
 .thumb-link {
-  display: block;
+  display: inline-block;
   text-decoration: none;
-  margin: 16px auto 0;
+  margin-top: 16px;
 }
 
 .thumb-link img {
