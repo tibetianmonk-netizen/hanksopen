@@ -55,7 +55,6 @@ img {
 .floorplan-link {
   display: block;
   text-decoration: none;
-  margin-top: 16px;
 }
 
 .floorplan-link img {
@@ -221,11 +220,17 @@ h1, h2, h3 {
     grid-template-columns: 1fr;
   }
 
-  .poster-col {
+  .poster-col,
+  .floorplan-col {
     max-width: 440px;
     margin: 0 auto;
     text-align: center;
   }
+
+  .poster-col { order: 1; }
+  .info-col { order: 2; }
+  .reservation-link { order: 3; }
+  .floorplan-col { order: 4; }
 }
 
 section {
