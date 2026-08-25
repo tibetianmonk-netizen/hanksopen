@@ -53,14 +53,16 @@ img {
 }
 
 .floorplan-link {
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }
 
 .floorplan-link img {
+  max-width: 480px;
   width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 a:hover {
@@ -173,6 +175,15 @@ h1, h2, h3 {
   margin: 0 auto;
 }
 
+.reservation-link {
+  grid-column: 2;
+}
+
+.floorplan-col {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
 .info-col h1 {
   font-size: 18.75px;
 }
@@ -220,17 +231,21 @@ h1, h2, h3 {
     grid-template-columns: 1fr;
   }
 
-  .poster-col,
-  .floorplan-col {
+  .poster-col {
     max-width: 440px;
     margin: 0 auto;
     text-align: center;
   }
 
+  .reservation-link,
+  .floorplan-col {
+    grid-column: 1;
+  }
+
   .poster-col { order: 1; }
   .info-col { order: 2; }
-  .reservation-link { order: 3; }
-  .floorplan-col { order: 4; }
+  .floorplan-col { order: 3; }
+  .reservation-link { order: 4; }
 }
 
 section {
