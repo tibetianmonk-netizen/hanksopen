@@ -175,12 +175,24 @@ h1, h2, h3 {
   margin: 0 auto;
 }
 
+.poster-col {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.info-col {
+  grid-column: 2;
+  grid-row: 1;
+}
+
 .reservation-link {
   grid-column: 2;
+  grid-row: 2;
 }
 
 .floorplan-col {
   grid-column: 1 / -1;
+  grid-row: 3;
   text-align: center;
 }
 
@@ -231,15 +243,18 @@ h1, h2, h3 {
     grid-template-columns: 1fr;
   }
 
+  .poster-col,
+  .info-col,
+  .reservation-link,
+  .floorplan-col {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
   .poster-col {
     max-width: 440px;
     margin: 0 auto;
     text-align: center;
-  }
-
-  .reservation-link,
-  .floorplan-col {
-    grid-column: 1;
   }
 
   .poster-col { order: 1; }
