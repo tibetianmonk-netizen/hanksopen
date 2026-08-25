@@ -52,23 +52,16 @@ img {
   margin: 0 auto;
 }
 
-.floorplan-section {
-  margin-top: 44px;
-}
-
 .floorplan-link {
-  display: inline-block;
+  display: block;
   text-decoration: none;
-  margin-top: 4px;
+  margin-top: 16px;
 }
 
 .floorplan-link img {
-  max-width: 480px;
   width: 100%;
   height: auto;
-  border: 1px solid #dddddd;
   display: block;
-  margin: 0 auto;
 }
 
 a:hover {
