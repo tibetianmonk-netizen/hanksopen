@@ -116,6 +116,11 @@ h1, h2, h3 {
   font-style: italic;
 }
 
+/* titles inside the italic English translation switch to upright, so they still stand out */
+.en em {
+  font-style: normal;
+}
+
 .statement {
   max-width: none;
   margin: 0 auto;
